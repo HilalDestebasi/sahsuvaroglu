@@ -32,24 +32,31 @@ class CarManager {
 
         private fun createMussoGrand(): Car{
             return Car(
+                id = 1,
                 name = "Musso Grand",
                 mainPicture = R.drawable.musso_grand,
+                priceList = listOf(
+                    CarPrice("MUSSO GRAND 2.2 Dizel 4x2 AT Platinum", "1.401.365 TL"),
+                    CarPrice("MUSSO GRAND 2.2 Dizel 4x2 AT Platinum Plus", "1.566.365 TL"),
+                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Platinum", "1.539.412 TL"),
+                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Edition", "2.064.412 TL"),
+                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Platinum Plus", "1.674.412 TL"),
+                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Edition", "1.964.412 TL")
+                ),
+                gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
+                youtubeVideoLink = "https://www.youtube.com/watch?v=SQKOVtZzSls&t=1s",
+                colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
+                carModelList = listOf(
+                    CarModel("Platinum D2.2 4x2","Otomatik","Dizel","4x2","₺1.401.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
+                    CarModel("Platinum D2.2 4x4","Otomatik","Dizel","4x4","₺1.539.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
+                    CarModel("Platinum Plus D2.2 4x2","Otomatik","Dizel","4x2","₺1.566.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
+                    CarModel("Platinum Plus D2.2 4x4","Otomatik","Dizel","4x4","₺1.674.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
+                    ),
                 car = listOf(
                     CarI(
                         name = "Musso Grand Platinum D2.2 4x2 Otomatik",
                         carGeneralInfo = CarGeneralInfo("Musso Grand Platinum D2.2 4x2 Otomatik","Otomatik","Dizel","4x2","₺1.401.365'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("MUSSO GRAND 2.2 Dizel 4x2 AT Platinum", "1.401.365 TL"),
-                            CarPrice("MUSSO GRAND 2.2 Dizel 4x2 AT Platinum Plus", "1.566.365 TL"),
-                            CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Platinum", "1.539.412 TL"),
-                            CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Edition", "2.064.412 TL"),
-                            CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Platinum Plus", "1.674.412 TL"),
-                            CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Edition", "1.964.412 TL")
-                        ),
-                        gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
-                        youtubeVideoLink = "https://www.youtube.com/watch?v=SQKOVtZzSls&t=1s",
-                        colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
-                        technicalSpecifications = TechnicalSpecifications(
+                              technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "4 Kapı",
                                 cylinderCount = "4 Silindir",
@@ -140,12 +147,6 @@ class CarManager {
                     CarI(
                         name = "Musso Grand Platinum D2.2 4x4 Otomatik",
                         carGeneralInfo = CarGeneralInfo("Musso Grand Platinum D2.2 4x4 Otomatik","Otomatik","Dizel","4x4","₺1.539.412'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("Musso Grand Platinum D2.2 4x4 Otomatik", "₺1.539.412'den başlayan fiyatlarla")
-                        ),
-                        gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
-                        youtubeVideoLink = "https://www.youtube.com/example",
-                        colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
                         technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "4 Kapı",
@@ -235,12 +236,6 @@ class CarManager {
                     CarI(
                         name = "Musso Grand Platinum Plus D2.2 4x2 Otomatik",
                         carGeneralInfo = CarGeneralInfo("Musso Grand Platinum Plus D2.2 4x2 Otomatik","Otomatik","Dizel","4x2","₺1.566.365'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("Musso Grand Platinum Plus D2.2 4x2 Otomatik", "₺1.566.365'den başlayan fiyatlarla")
-                        ),
-                        gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
-                        youtubeVideoLink = "https://www.youtube.com/example",
-                        colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
                         technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "4 Kapı",
@@ -330,12 +325,6 @@ class CarManager {
                     CarI(
                         name = "Musso Grand Platinum Plus D2.2 4x4 Otomatik",
                         carGeneralInfo = CarGeneralInfo("Musso Grand Platinum Plus D2.2 4x4 Otomatik","Otomatik","Dizel","4x4","₺1.674.412'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("Musso Grand Platinum Plus D2.2 4x4 Otomatik", "₺1.674.412'den başlayan fiyatlarla")
-                        ),
-                        gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
-                        youtubeVideoLink = "https://www.youtube.com/example",
-                        colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
                         technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "4 Kapı",
@@ -437,20 +426,25 @@ class CarManager {
 
         private fun createTorres(): Car{
             return  Car(
+                id = 2,
                 mainPicture = R.drawable.torres,
                 name = "Torres",
+                priceList = listOf(
+                    CarPrice("TORRES 1.5 GDI Turbo Benzinli 4x2", "2.471.450 TL"),
+                    CarPrice("TORRES 1.5 GDI Turbo Benzinli 4x4", "2.671.450 TL")
+                ),
+                gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
+                youtubeVideoLink = "https://www.youtube.com/watch?time_continue=1&v=JUATjV-W2J4&embeds_referring_euri=https%3A%2F%2Fssangyong.com.tr%2F&source_ve_path=Mjg2NjY&feature=emb_logo",
+                colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
+                carModelList = listOf(
+                    CarModel("Torres 4x2","Otomatik","Benzinli","4x2","₺2.471.450'den başlayan fiyatlarla",R.drawable.torres3),
+                    CarModel("Torres 4x4","Otomatik","Benzinli","4x4","₺2.671.450'den başlayan fiyatlarla",R.drawable.torres2),
+                    ),
                 car = listOf(
                     CarI(
                         name = "Torres 4x2 1.5 GDI Turbo",
                         carGeneralInfo = CarGeneralInfo("Torres 4x2 1.5 GDI Turbo","Otomatik","Benzinli","4x2","₺2.471.450'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("TORRES 1.5 GDI Turbo Benzinli 4x2", "2.471.450 TL"),
-                            CarPrice("TORRES 1.5 GDI Turbo Benzinli 4x4", "2.671.450 TL")
-                        ),
-                        gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
-                        youtubeVideoLink = "https://www.youtube.com/watch?time_continue=1&v=JUATjV-W2J4&embeds_referring_euri=https%3A%2F%2Fssangyong.com.tr%2F&source_ve_path=Mjg2NjY&feature=emb_logo",
-                        colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
-                        technicalSpecifications = TechnicalSpecifications(
+                              technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "5 Kapı",
                                 cylinderCount = "4 Silindir",
@@ -554,12 +548,6 @@ class CarManager {
                     CarI(
                         name = "Torres 4x4 1.5 GDI Turbo Otomatik Benzinli",
                         carGeneralInfo = CarGeneralInfo("Torres 4x4 1.5 GDI Turbo","Otomatik","Benzinli","4x4","₺2.671.450'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("TORRES 1.5 GDI Turbo Otomatik Benzinli 4x4", "₺2.671.450'den başlayan fiyatlarla")
-                        ),
-                        gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
-                        youtubeVideoLink = "https://www.youtube.com/example",
-                        colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
                         technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "5 Kapı",
@@ -662,25 +650,27 @@ class CarManager {
 
         private fun createTorresEvx(): Car {
             return Car(
+                id = 3,
                 name = "Torres EVX",
                 mainPicture = R.drawable.torres_evx,
+                priceList = listOf(
+                    CarPrice("Torres EVX 4x2 Elektrik", "1.780.000 TL")
+                ),
+                gallery = listOf(
+                    "drawable/torres_gallery.jpg",
+                    "drawable/torres_gallery.jpg"
+                ),
+                youtubeVideoLink = "https://www.youtube.com/example",
+                colorOptions = listOf(
+                    ColorOptions("drawable/musso_grand.png", "Black"),
+                    ColorOptions("drawable/musso_grand.png", "Black")
+                ),
+                carModelList =null,
                 car = listOf(
                     CarI(
                         name = "Torres EVX 2024",
                         carGeneralInfo = CarGeneralInfo("Torres EVX Torres EVX 4x2","Otomatik","Elektrik","4x2","₺1.780.000'den başlayan fiyatlarla"),
-                        priceList = listOf(
-                            CarPrice("Torres EVX 4x2 Elektrik", "1.780.000 TL")
-                        ),
-                        gallery = listOf(
-                            "drawable/torres_gallery.jpg",
-                            "drawable/torres_gallery.jpg"
-                        ),
-                        youtubeVideoLink = "https://www.youtube.com/example",
-                        colorOptions = listOf(
-                            ColorOptions("drawable/musso_grand.png", "Black"),
-                            ColorOptions("drawable/musso_grand.png", "Black")
-                        ),
-                        technicalSpecifications = TechnicalSpecifications(
+                               technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "5 Kapı",
                                 maxSpeed = "175 km/saat",

@@ -36,19 +36,11 @@ class CarModelActivity : AppCompatActivity() {
         val carName = intent.getStringExtra("CAR_NAME")
         if(carName == "Torres"){
             binding.carModelList.layoutManager = GridLayoutManager(binding.root.context,2)
-            binding.carModelList.adapter = CarModelAdapter(listOf(
-                CarModel("Torres 4x2","Otomatik","Benzinli","4x2","₺2.471.450'den başlayan fiyatlarla",R.drawable.torres3),
-                CarModel("Torres 4x4","Otomatik","Benzinli","4x4","₺2.671.450'den başlayan fiyatlarla",R.drawable.torres2),
-            ))
+            binding.carModelList.adapter = CarModelAdapter(CarManager.getTorres().carModelList!!)
             binding.carModelTitle.setImageResource(R.drawable.torres_logo_color)
         }else{
             binding.carModelList.layoutManager = GridLayoutManager(binding.root.context,2)
-            binding.carModelList.adapter = CarModelAdapter(listOf(
-                CarModel("Platinum D2.2 4x2","Otomatik","Dizel","4x2","₺1.401.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
-                CarModel("Platinum D2.2 4x4","Otomatik","Dizel","4x4","₺1.539.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
-                CarModel("Platinum Plus D2.2 4x2","Otomatik","Dizel","4x2","₺1.566.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
-                CarModel("Platinum Plus D2.2 4x4","Otomatik","Dizel","4x4","₺1.674.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
-            ))
+            binding.carModelList.adapter = CarModelAdapter(CarManager.getMussoGrand().carModelList!!)
             binding.carModelTitle.setImageResource(R.drawable.mussogrand_logo_color)
         }
         binding.carModelBackIcon.setOnClickListener {

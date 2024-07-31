@@ -54,8 +54,7 @@ class PriceListActivity : AppCompatActivity() {
         if(carName=="Torres"){
             val recycler_view: RecyclerView = findViewById(R.id.price_list)
             recycler_view.layoutManager = LinearLayoutManager(this)
-            val car : List<CarI> = CarManager.getTorres().car
-            recycler_view.adapter = CarPriceAdapter(car.get(0).priceList)
+            recycler_view.adapter = CarPriceAdapter(CarManager.getTorres().priceList)
             img.setImageResource(R.drawable.torres3)
             textView.text = "TORRES 1.5 Turbo Benzinli"
             title.setImageResource(R.drawable.torres_logo_color)
@@ -76,8 +75,7 @@ class PriceListActivity : AppCompatActivity() {
         }else{
             val recycler_view: RecyclerView = findViewById(R.id.price_list)
             recycler_view.layoutManager = LinearLayoutManager(this)
-            val car : List<CarI> = CarManager.getMussoGrand().car
-            recycler_view.adapter = CarPriceAdapter(car.get(0).priceList)
+            recycler_view.adapter = CarPriceAdapter(CarManager.getMussoGrand().priceList)
             img.setImageResource(R.drawable.musso_grand)
             textView.text = "MUSSO GRAND 2.2 Dizel"
             title.setImageResource(R.drawable.mussogrand_logo_color)
