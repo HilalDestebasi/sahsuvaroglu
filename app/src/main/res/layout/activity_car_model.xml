@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarModelActivity">
+
+    <ImageView
+        android:id="@+id/car_model_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:src="@drawable/torres_logo_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/car_model_back_icon"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/car_page_container_frame"
+        android:gravity="center"
+        android:text="Geri"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/car_model_title"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/car_model_page_logo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/kgm_logo_w"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/car_model_title"
+        app:layout_constraintTop_toTopOf="@id/car_model_title" />
+
+    <ImageView
+        android:id="@+id/car_model_sg_logo"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_55sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/sahsuvaroglu_grup_logo"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/car_model_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:scrollbars="none"
+            app:layout_constraintTop_toBottomOf="@id/car_model_title"
+            tools:listitem="@layout/car_model_item"
+            android:layout_marginTop="@dimen/_5sdp"/>
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

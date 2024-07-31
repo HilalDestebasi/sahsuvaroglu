@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bubble_background"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Şahsuvaroğlu Grup\n"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/popup_text"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/league_spartan_regular"
+        android:textSize="@dimen/_8ssp"
+        android:lineHeight="@dimen/_9ssp"
+        android:layout_height="wrap_content"
+        android:text="      Şahsuvaroğlu Grup, 1966 yılında faaliyetlerine traktör ve yedek parça satışı ile Erzurum’da başlamıştır.
+
+\n      2000’li yıllara kadar başta Erzurum ve İstanbul olmak üzere; birçok lokasyonda çeşitli markaların bayiliğini üstlenmiştir.
+
+\n      Bu dönemde Şahsuvaroğlu Grup; temsilcisi olduğu tüm markaların bayi satış adetleri sıralamasında genellikle zirvede ve ilk 3 içerisinde yer almıştır. 2000 yılına kadar olan bu süreçte çalıştığı markalara kattığı değerlerle; Türkiye’de ilk yol yardım hizmeti, ilk interaktif servis hizmeti ve ilk masa başında kredi verme hizmeti sunarak temsil etmiş olduğu markaların satışlarına ivme kazandırmıştır.
+
+\n      Şahsuvaroğlu Grup, edindiği tüm bu tecrübeler, başarılar, inovatif çalışmalar ve bayilik yaptığı markalara kattığı değer ile, artık distribütörlüğe adım atması gerektiği kararına vararak, 2007 yılında Güney Koreli SsangYong’un Türkiye Distribütörlüğünü, 2016 yılından itibaren de Çin’in en büyük Otomotiv devlerinden Sokon Grubun iştiraki DFSK markasının Türkiye Distribütörlüğünü almıştır."
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kapat"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_6ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/league_spartan_regular"
+        android:background="@drawable/close_icon_background"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

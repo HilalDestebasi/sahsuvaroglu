@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#302C4D</color>
+    <color name="price_color">#666285</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="main_page_review_color">#BFC3E6</color>
+    <color name="main_page_car_name_color">#DDDFF1</color>
+    <color name="selected_item_color">#B1A6FF</color>
+</resources>

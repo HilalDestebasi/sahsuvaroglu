@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/kgm_logo_"
+        app:layout_constraintBottom_toTopOf="@+id/torres_evx_main_page_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/torres_evx_main_page_img"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/torres_evx2"
+        app:layout_constraintEnd_toStartOf="@id/musso_grand_main_page_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/torres_main_page_img" />
+
+    <ImageView
+        android:id="@+id/torres_main_page_img"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintEnd_toStartOf="@id/torres_evx_main_page_img"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/torres3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/musso_grand_main_page_img"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_155sdp"
+        android:src="@drawable/musso_grand8"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toEndOf="@id/torres_evx_main_page_img"
+
+        />
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/torres_evx_logo"
+        app:layout_constraintTop_toBottomOf="@id/torres_evx_main_page_img"
+        app:layout_constraintStart_toStartOf="@id/torres_evx_main_page_img"
+        app:layout_constraintEnd_toEndOf="@id/torres_evx_main_page_img"
+        />
+
+
+    <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/torres_logo"
+        app:layout_constraintTop_toBottomOf="@id/torres_main_page_img"
+        app:layout_constraintStart_toStartOf="@id/torres_main_page_img"
+        app:layout_constraintEnd_toEndOf="@id/torres_main_page_img"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/sahsuvaroglu_grup_guvencesiyle"/>
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/mussogrand_logo_white"
+        app:layout_constraintTop_toBottomOf="@id/torres_main_page_img"
+        app:layout_constraintStart_toStartOf="@id/musso_grand_main_page_img"
+        app:layout_constraintEnd_toEndOf="@id/musso_grand_main_page_img" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

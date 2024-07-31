@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_image"
+    android:layout_height="match_parent"
+    tools:context=".PriceListActivity">
+
+    <ImageView
+        android:id="@+id/price_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:src="@drawable/torres_logo_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/price_list_page_logo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/kgm_logo_w"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/price_list_title"
+        app:layout_constraintTop_toTopOf="@id/price_list_title" />
+
+
+    <ImageView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/musso_grand"
+        app:layout_constraintTop_toBottomOf="@id/price_list_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/price_list_car_img"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUSSO GRAND 2.2 DİZEL"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@id/price_list_car_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginStart="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/price_list_car_name"/>
+
+
+    <ScrollView
+        android:id="@+id/price_list_scroll_view"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/price_list_car_name"
+        app:layout_constraintStart_toStartOf="@id/price_list_car_name"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/price_list"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:listitem="@layout/item_car_price"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/_65sdp"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/price_list_back_icon"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/car_page_container_frame"
+        android:gravity="center"
+        android:text="Geri"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_list_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/price_list_title" />
+
+    <ImageView
+        android:id="@+id/price_list_sg_logo"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/sahsuvaroglu_grup_logo"/>
+
+    <TextView
+        android:id="@+id/kampanya_button"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="@id/price_list_car_name"
+        app:layout_constraintBottom_toBottomOf="@id/price_list_car_name"
+        android:background="@drawable/hard_n_tech_background"
+   app:layout_constraintEnd_toEndOf="@id/price_list_back_icon"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Kampanya"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

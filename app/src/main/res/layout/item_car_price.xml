@@ -1,0 +1,50 @@
+<!-- item_car_price.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/vertical_seperator"
+        android:layout_width="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/car_price_separator"
+        app:layout_constraintTop_toTopOf="@id/car_name"
+        android:background="#86FFFFFF"/>
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_15sdp"
+        android:text="Araba Adı"
+        app:layout_constraintEnd_toStartOf="@id/car_price"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/league_spartan_regular" />
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_regular"
+        android:gravity="center"
+        android:text="1.234.567 TL"
+        app:layout_constraintTop_toTopOf="@id/car_name"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/car_name" />
+
+    <View
+        android:id="@+id/car_price_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/car_name"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="#86FFFFFF"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

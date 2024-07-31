@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    tools:context=".CarPageActivity">
+
+    <ImageView
+        android:id="@+id/car_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:src="@drawable/torres_logo_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/car_page_logo"
+        app:layout_constraintBottom_toTopOf="@id/icons_container"
+/>
+
+    <TextView
+        android:id="@+id/car_page_back_icon"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/car_page_container_frame"
+        android:gravity="center"
+        android:text="Geri"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintTop_toTopOf="@id/car_page_logo"
+        app:layout_constraintBottom_toBottomOf="@id/car_page_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_15sdp"
+
+        />
+
+    <ImageView
+        android:id="@+id/car_page_logo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/kgm_logo_w"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+
+    <ImageView
+        android:id="@+id/car_page_sg_logo"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/sahsuvaroglu_grup_logo"/>
+
+    <LinearLayout
+        android:id="@+id/icons_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHeight_percent="0.4"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <!-- Icon 1 -->
+        <LinearLayout
+            android:id="@+id/hardware_n_technical_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/car_page_container_frame"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_4sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/hardware_n_technical_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:fontFamily="@font/league_spartan_regular"
+                android:text="Donanım ve Teknik \nÖzellikler"
+                android:textColor="@color/main_page_review_color" />
+        </LinearLayout>
+
+        <!-- Icon 2 -->
+        <LinearLayout
+            android:id="@+id/gallery_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/car_page_container_frame"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_4sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/gallery_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Galeri"
+                android:layout_height="@dimen/_25sdp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/league_spartan_regular"
+                android:textColor="@color/main_page_review_color"/>
+        </LinearLayout>
+
+        <!-- Icon 3 -->
+        <LinearLayout
+            android:id="@+id/price_list_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/car_page_container_frame"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_4sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/price_list_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="Fiyat Listesi"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/league_spartan_regular"
+                android:textColor="@color/main_page_review_color"/>
+        </LinearLayout>
+
+        <!-- Icon 4 -->
+        <LinearLayout
+            android:id="@+id/location_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/car_page_container_frame"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_4sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:src="@drawable/location_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:fontFamily="@font/league_spartan_regular"
+                android:text="Yetkili Satış ve Servis Noktaları"
+                android:textColor="@color/main_page_review_color" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

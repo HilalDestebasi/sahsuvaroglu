@@ -1,0 +1,43 @@
+<!-- custom_info_window.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textSize="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/satis_servis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/league_spartan_regular"
+        android:textSize="@dimen/_10sdp"/>
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/league_spartan_regular"
+        android:textSize="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/league_spartan_regular"
+        android:textSize="@dimen/_10sdp"/>
+
+</LinearLayout>
