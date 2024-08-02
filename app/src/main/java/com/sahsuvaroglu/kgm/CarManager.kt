@@ -36,12 +36,13 @@ class CarManager {
                 name = "Musso Grand",
                 mainPicture = R.drawable.musso_grand,
                 priceList = listOf(
-                    CarPrice("MUSSO GRAND 2.2 Dizel 4x2 AT Platinum", "1.401.365 TL"),
-                    CarPrice("MUSSO GRAND 2.2 Dizel 4x2 AT Platinum Plus", "1.566.365 TL"),
-                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Platinum", "1.539.412 TL"),
-                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Edition", "2.064.412 TL"),
-                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Platinum Plus", "1.674.412 TL"),
-                    CarPrice("MUSSO GRAND 2.2 Dizel 4x4 AT Edition", "1.964.412 TL")
+                    CarPrice("MUSSO GRAND D2.2 4X2 A/T PLATINUM (2024 GSR)", "1.310.000 TL"),
+                    CarPrice("MUSSO GRAND D2.2 4X2 A/T PLATINUM PLUS (2024 GSR)", "1.460.000 TL"),
+                    CarPrice("MUSSO GRAND D2.2 4X4 A/T PLATINUM (2024 GSR)", "1.419.412 TL"),
+                    CarPrice("MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS (GSR)", "1.554.412 TL"),
+                    CarPrice("MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS (2023)", "1.674.412 TL"),
+                    CarPrice("MUSSO GRAND D2.2 4X4 A/T PLATINUM PLUS (2024)", "1.924.412 TL"),
+                    CarPrice("MUSSO GRAND D2.2 4X4 A/T EDITION (2023)", "2.064.412 TL")
                 ),
                 gallery = listOf("drawable/torres_gallery.jpg", "drawable/torres_gallery.jpg"),
                 youtubeVideoLink = "https://www.youtube.com/watch?v=SQKOVtZzSls&t=1s",
@@ -654,7 +655,7 @@ class CarManager {
                 name = "Torres EVX",
                 mainPicture = R.drawable.torres_evx,
                 priceList = listOf(
-                    CarPrice("Torres EVX 4x2 Elektrik", "1.780.000 TL")
+                    CarPrice("Torres EVX 4x2 Elektrik", "1.880.000 TL")
                 ),
                 gallery = listOf(
                     "drawable/torres_gallery.jpg",

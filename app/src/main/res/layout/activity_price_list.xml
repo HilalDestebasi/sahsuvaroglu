@@ -56,9 +56,12 @@
 
     <ScrollView
         android:id="@+id/price_list_scroll_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@id/price_list_car_name"
         app:layout_constraintStart_toStartOf="@id/price_list_car_name"
+        app:layout_constraintEnd_toEndOf="@id/price_list_back_icon"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_7sdp"
         android:layout_marginTop="@dimen/_160sdp"
         android:layout_height="match_parent">
         <androidx.recyclerview.widget.RecyclerView
@@ -67,7 +70,7 @@
             tools:listitem="@layout/item_car_price"
             android:layout_width="wrap_content"
             android:layout_marginBottom="@dimen/_65sdp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"/>
     </ScrollView>
 
 
