@@ -49,9 +49,9 @@ class CarManager {
                 colorOptions = listOf(ColorOptions("drawable/musso_grand.png","Black"), ColorOptions("drawable/musso_grand.png","Black")),
                 carModelList = listOf(
                     CarModel("Platinum D2.2 4x2","Otomatik","Dizel","4x2","₺1.401.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
-                    CarModel("Platinum D2.2 4x4","Otomatik","Dizel","4x4","₺1.539.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
-                    CarModel("Platinum Plus D2.2 4x2","Otomatik","Dizel","4x2","₺1.566.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
-                    CarModel("Platinum Plus D2.2 4x4","Otomatik","Dizel","4x4","₺1.674.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
+                    CarModel("Platinum D2.2 4x4","Otomatik","Dizel","4x4","₺1.789.412'den başlayan fiyatlarla",R.drawable.musso_grand8),
+                    CarModel("Platinum Plus D2.2 4x2","Otomatik","Dizel","4x2","₺1.716.365'den başlayan fiyatlarla",R.drawable.musso_grand4),
+                    CarModel("Platinum Plus D2.2 4x4","Otomatik","Dizel","4x4","₺1.924.41'den başlayan fiyatlarla",R.drawable.musso_grand8),
                     ),
                 car = listOf(
                     CarI(
@@ -670,7 +670,7 @@ class CarManager {
                 car = listOf(
                     CarI(
                         name = "Torres EVX 2024",
-                        carGeneralInfo = CarGeneralInfo("Torres EVX Torres EVX 4x2","Otomatik","Elektrik","4x2","₺1.780.000'den başlayan fiyatlarla"),
+                        carGeneralInfo = CarGeneralInfo("Torres EVX Torres EVX 4x2","Otomatik","Elektrik","4x2","₺1.880.000'den başlayan fiyatlarla"),
                                technicalSpecifications = TechnicalSpecifications(
                             overview = Overview(
                                 doorCount = "5 Kapı",
