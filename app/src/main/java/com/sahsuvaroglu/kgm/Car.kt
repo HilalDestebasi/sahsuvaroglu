@@ -1,11 +1,9 @@
 package com.sahsuvaroglu.kgm
 
 data class Car(
-    val id: Int,
     val name: String,
     val mainPicture: Int,
     val priceList: List<CarPrice>,
-    val gallery: List<String>,
     val youtubeVideoLink: String,
     val colorOptions: List<ColorOptions>,
     val carModelList: List<CarModel>?,
