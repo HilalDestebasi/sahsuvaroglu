@@ -1,6 +1,8 @@
 package com.sahsuvaroglu.kgm
 
+import android.content.ContentValues.TAG
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,7 +29,20 @@ class CarModelAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataList[position]
         holder.title.text = item.title
-        holder.img.setImageResource(item.img)
+
+
+        val imageResourceId = holder.itemView.context.resources.getIdentifier(
+            item.img, "drawable", holder.itemView.context.packageName
+        )
+
+        // Log the resource ID
+
+        if (imageResourceId != 0) {
+            holder.img.setImageResource(imageResourceId)
+        } else {
+            Log.e(TAG, "Drawable resource not found for name: ${item.img}")
+            holder.img.setImageResource(R.drawable.musso_grand8)  // Use a default image as a fallback
+        }
 
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context
@@ -37,6 +52,7 @@ class CarModelAdapter(
             context.startActivity(intent)
         }
     }
+
 
     override fun getItemCount(): Int {
         return dataList.size

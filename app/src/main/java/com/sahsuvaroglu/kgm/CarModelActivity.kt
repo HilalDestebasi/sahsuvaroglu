@@ -40,7 +40,7 @@ class CarModelActivity : AppCompatActivity() {
             binding.carModelTitle.setImageResource(R.drawable.torres_logo_color)
         }else{
             binding.carModelList.layoutManager = GridLayoutManager(binding.root.context,2)
-            binding.carModelList.adapter = CarModelAdapter(CarManager.getMussoGrand().carModelList!!)
+            binding.carModelList.adapter = CarModelAdapter(CarManager.getMussoGrand().carModelList)
             binding.carModelTitle.setImageResource(R.drawable.mussogrand_logo_color)
         }
         binding.carModelBackIcon.setOnClickListener {

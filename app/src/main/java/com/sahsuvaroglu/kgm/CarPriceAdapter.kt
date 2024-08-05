@@ -11,7 +11,6 @@ class CarPriceAdapter(private val carPrices: List<CarPrice>) : RecyclerView.Adap
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val carName: TextView = itemView.findViewById(R.id.car_name)
         val carPrice: TextView = itemView.findViewById(R.id.car_price)
-        val separator: View = itemView.findViewById(R.id.car_price_separator)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

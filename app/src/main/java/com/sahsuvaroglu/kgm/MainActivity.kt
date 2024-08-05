@@ -9,14 +9,10 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.Firebase
-import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.database
-import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,35 +37,39 @@ class MainActivity : AppCompatActivity() {
 
         val database = FirebaseDatabase.getInstance()
 
-// Assuming the root reference has a list of cars
         val carsRef = database.reference.child("cars")
 
         carsRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
-                    for (carSnapshot in snapshot.children) {
-                        try {
-
-                            val car = carSnapshot.getValue(Car::class.java)
-                            car?.let {
-                                Log.d(TAG, "Fetched car data: $it")
-                                when (it.name) {
-                                    "Musso Grand" -> CarManager.setMussoGrand(it)
-                                    "Torres" -> CarManager.setTorres(it)
-                                    "Torres EVX" -> CarManager.setTorresEvx(it)
+                        for (carSnapshot in snapshot.children) {
+                            try {
+                                val firebaseCar = carSnapshot.getValue(FirebaseCar::class.java)
+                                firebaseCar?.let {
+                                    val car = it.toCar()
+                                    Log.d(TAG, "Fetched car data: $car")
+                                    when (carSnapshot.key) {
+                                        "Musso Grand" -> CarManager.setMussoGrand(car)
+                                        "Torres" -> CarManager.setTorres(car)
+                                        "Torres EVX" -> CarManager.setTorresEvx(car)
+                                        else -> Log.d(TAG, "Unknown car model: ${carSnapshot.key}")
+                                    }
                                 }
+                            } catch (e: Exception) {
+                                Log.e(TAG, "Error parsing car data: ${e.message}")
                             }
-                        } catch (e: Exception) {
-                            Log.e(TAG, "Error parsing car data: ${e.message}")
                         }
-                    }
+                } else {
+                    Log.d(TAG, "No data exists at this reference.")
                 }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Log.w(TAG, "Failed to read car values.", error.toException())
+                Log.e(TAG, "Database error: ${error.message}")
             }
         })
+
+
 
 
     }
