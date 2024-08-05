@@ -373,7 +373,7 @@
                 android:layout_width="match_parent"
                 android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
                 app:layout_constraintTop_toBottomOf="@id/hard_n_tech_page_tech_button">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -401,7 +401,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_5sdp"
                             android:fontFamily="@font/league_spartan_regular"
-                            android:text="Guvenlik"
+                            android:text="Güvenlik"
                             android:textSize="@dimen/_10ssp"
                             android:textColor="@color/main_page_car_name_color"
                             app:layout_constraintBottom_toBottomOf="parent"
