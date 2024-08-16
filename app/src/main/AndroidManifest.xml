@@ -31,10 +31,6 @@
             android:exported="false"
             android:screenOrientation="landscape" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA6bU5Kfdw3pT_zzwjxiyUfm3OI5Tijg08" />
-
         <activity
             android:name=".LocationActivity"
             android:exported="false"

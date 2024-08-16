@@ -91,7 +91,7 @@ class LocationActivity : AppCompatActivity() {
                 ),
                 LocationInfo(
                     "YMY BURSA",
-                    "Satış",
+                    "Satış - Servis",
                     LatLng(0.000000, 0.000000),
                     "İzmir Yolu Üzeri 8.Km No:279 Bursa",
                     "+902244431225"
@@ -168,154 +168,154 @@ class LocationActivity : AppCompatActivity() {
                 ),
                 LocationInfo(
                     "ALKANLAR OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
-                    "Konacık Mahallesi, Konacık Sanayi Sitesi D Blok No:5 Bodrum/Muğla",
+                    "Konacık Mahallesi, Konacık Sanayi Sitesi D Blok No:8 Bodrum/Muğla ",
                     "+902523638279"
                 ),
                 LocationInfo(
                     "ÇELİK OTOMOTİV",
-                    "Satış",
+                    "Satış - Servis",
                     LatLng(0.000000, 0.000000),
-                    "Cennetayağı mahallesi Alpaslan Türkeş bulvarı. No:9/A BANDIRMA/BALIKESİR",
+                    "Cennetayağı mahallesi Alpaslan Türkeş bulvarı. No11/1 Edremit Balıkesir",
                     "+902663722424"
                 ),
                 LocationInfo(
                     "OTOSTORE OTOMOTİV",
                     "Satış - Servis",
                     LatLng(0.000000, 0.000000),
-                    "Seyrantepe San. Mah. Seyrantepe Kavşağı Twin Towers No:1/35 Kağıthane/İstanbul",
+                    "Seyrantepe San. Mah. Seyrantepe Kavşağı Twin Towers A Blok Altı No: 77, 21120 Yenişehir/Diyarbakır",
                     "+904125026097"
                 ),
                 LocationInfo(
                     "SUR OTOMOTİV",
                     "Satış",
                     LatLng(0.000000, 0.000000),
-                    "Kervansaray Mah. 1973. Sk. No:2/4 Merkez/KIRŞEHİR",
+                    "Kervansaray Mah. 1973. Sk. No:2/4 Merkez/KIRŞEHİR ",
                     "+903862527966"
                 ),
                 LocationInfo(
                     "GRUP İLBEY OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
-                    "Yenişehir Mh. Ravza Cd. 1931 Sk. İlhan Apt. 47/A BATMAN",
+                    "Yenişehir Mh. Ravza Cd. 1931 Sk. İlhan Apt. 47200 Artuklu/Mardin ",
                     "+904822124900"
                 ),
                 LocationInfo(
                     "ANIL OTOMOTİV",
                     "Satış - Servis",
                     LatLng(0.000000, 0.000000),
-                    "Mustafa Kemal Mah. İbrahim Karaoğlanoğlu Cad. No:36/A İSKENDERUN/HATAY",
+                    "Mustafa Kemal Mah. İbrahim Karaoğlanoğlu Cad. No.80/A İskenderun / Hatay",
                     "+903266187700"
                 ),
                 LocationInfo(
                     "B MOTORS OTOMOTİV",
-                    "Satış - Servis",
+                    "Satış",
                     LatLng(0.000000, 0.000000),
-                    "Uzuntepe Mah. Sultanşehir Blv. 1.OSGB Karşısı No:18 Sivas",
+                    "Uzuntepe Mah. Sultanşehir Blv. 1.OSGB Karşısı No: 176 Merkez / Sivas ",
                     "+903462263058"
                 ),
                 LocationInfo(
                     "AHİ GROUP OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Gülalibey Mah. 967 Sk. No: 28 Merkez / Erzincan",
                     "+904462147588"
                 ),
                 LocationInfo(
                     "KONYA PRATİK OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
-                    "Kottim İş Merkezi Fevzi Çakmak Mahallesi Çelik Cad. No:85/5 Konya",
+                    "Kottim İş Merkezi Fevzi Çakmak Mahallesi Çelik Caddesi No:8 Karatay/ KONYA",
                     "+903322386326"
                 ),
                 LocationInfo(
                     "KONYA TAMİR BAKIM SERVİSİ (AHTAP OTO)",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
-                    "Musalla Bağları Mahallesi Gürsesler Sk. Sefer Apt. No:3/A Konya",
+                    "Musalla Bağları Mahallesi Gürsesler Sk. Sefer A.Ş. Sitesi N:2 Selçuklu/Konya",
                     "+903322441010"
                 ),
                 LocationInfo(
                     "ADAŞEN OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Adnan Menderes Cad. No: 143 Adapazarı / SAKARYA",
                     "+902643595454"
                 ),
                 LocationInfo(
                     "AYHAN OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "1.Sanayi Sitesi B Blok No: 9-10 Zonguldak",
                     "+903723161896"
                 ),
                 LocationInfo(
                     "AYIK OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
-                    "Mehmet Akif Ersoy Mh. Yeni Sanayi Girişi Halife Sitesi No:27 Sivas",
+                    "Mehmet Akif Ersoy Mh. Yeni Sanayi Girişi Halifelik Cad No:1-2 Sivas",
                     "+903462151208"
                 ),
                 LocationInfo(
                     "ÇETİN OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Taşyaka Mah. Yeni San. Sitesi 254. Sok. No:27 Fethiye/MUĞLA",
                     "+902526145488"
                 ),
                 LocationInfo(
                     "GANİ KARDEŞLER",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Gülabi Bey Mah. 967.Sok. No:28-32 Bolu",
                     "+903742158455"
                 ),
                 LocationInfo(
                     "GÜÇLÜ OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Ataşehir Mah. Malatya Cad. Cezaevi Şok. No:289 Elazığ",
                     "+904242471801"
                 ),
                 LocationInfo(
                     "GÜRCAN OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Atatürk Oto Sanayi Sitesi 1. Kısım A Blok No:78 Maslak/İstanbul",
                     "+902123462608"
                 ),
                 LocationInfo(
                     "KESKİN KARDEŞLER",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Toybelen Mah. Anadolu Bulvarı No:175 İç Kapı No:Z1 İlkadım/Samsun",
                     "+903622665583"
                 ),
                 LocationInfo(
                     "OTOFORS OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Sümer Mah. 53. Sok. No:29 Merkezefendi/Denizli",
                     "+902582661599"
                 ),
                 LocationInfo(
                     "ŞAHİN OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "2. Küçük Sanayi Sitesi 6. Ada 4. Blok No:5 Afyon",
                     "+902722234545"
                 ),
                 LocationInfo(
                     "TUREL OTOMOTİV",
-                    "Satış",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Yeni Sanayi Sitesi 3. Cad. 84. Sokak Kayseri",
                     "+903523325848"
                 ),
                 LocationInfo(
                     "UZMAN OTOMOTİV",
-                    "Satış - Servis",
+                    "Servis",
                     LatLng(0.000000, 0.000000),
                     "Kestel Mah. Semt Sahil Cad. 23 Z01 Alanya/Antalya",
                     "+902425151618"
@@ -336,21 +336,21 @@ class LocationActivity : AppCompatActivity() {
                 ),
                 LocationInfo(
                     "ULAK OTOMOTİV",
-                    "Satış",
+                    "Satış - Servis",
                     LatLng(0.000000, 0.000000),
                     "SÜPHAN MAH. IPEKYOLU BLV. NO:351 EDREMIT/VAN",
                     "+904322170303"
                 ),
             LocationInfo(
                 "ERKAYA OTOMOTİV",
-                    "Satış - Servis",
+                    "Satış",
                 LatLng(0.000000, 0.000000),
                 "ATAKENT MAH. 6052 SK. NO:1 IC KAPI NO:1 KARAKÖPRÜ/SANLIURFA",
                 "+908502816311"
             ),
             LocationInfo(
                 "ERKAYA OTOMOTİV",
-                "Satış",
+                "Servis",
                 LatLng(0.000000, 0.000000),
                 "KADIKENDİ MAH. 8728 CAD. NO:20E EYYÜBIYE/ŞANLIURFA",
                 "+908502816311"
