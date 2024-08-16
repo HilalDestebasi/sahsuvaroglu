@@ -24,15 +24,6 @@ class CarPriceAdapter(private val carPrices: List<CarPrice>) : RecyclerView.Adap
         holder.carName.text = currentCarPrice.modelName
         holder.carPrice.text = currentCarPrice.price
 
-        if (position == carPrices.size - 1) {
-            holder.separator.visibility = View.GONE
-        } else {
-            holder.separator.visibility = View.VISIBLE
-        }
-        if (position == carPrices.size - 1&&currentCarPrice.modelName=="Torres EVX 4x2 Elektrik") {
-            holder.carName.visibility =View.GONE
-            holder.carPrice.visibility=View.GONE
-        }
     }
 
     override fun getItemCount(): Int {

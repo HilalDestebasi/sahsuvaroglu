@@ -64,10 +64,7 @@ class PriceListActivity : AppCompatActivity() {
         }else if(carName == "Torres EVX"){
             val recycler_view: RecyclerView = findViewById(R.id.price_list)
             recycler_view.layoutManager = LinearLayoutManager(this)
-            recycler_view.adapter = CarPriceAdapter(listOf(
-                CarPrice("Torres EVX 4x2 Elektrik", "1.780.000 TL"),
-                CarPrice("Torres EVX 4x2 Elektrik", "1.780.000 TL")
-            ))
+            recycler_view.adapter = CarPriceAdapter(CarManager.getTorresEvx().priceList)
             img.setImageResource(R.drawable.torres_evx)
             textView.text = "Torres EVX 4x2 Elektrik"
             title.setImageResource(R.drawable.torres_evx_logo_color)
