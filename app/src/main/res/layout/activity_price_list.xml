@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/background_image"
     android:layout_height="match_parent"
-    tools:context=".PriceListActivity">
+    tools:context=".presentation.PriceListActivity">
 
     <ImageView
         android:id="@+id/price_list_title"

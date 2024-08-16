@@ -6,7 +6,7 @@
     android:background="@drawable/background_image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CarModelActivity">
+    tools:context=".presentation.CarModelActivity">
 
     <ImageView
         android:id="@+id/car_model_title"
