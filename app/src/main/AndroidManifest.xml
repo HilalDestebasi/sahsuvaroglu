@@ -19,44 +19,41 @@
         tools:ignore="DiscouragedApi"
         tools:targetApi="31">
         <activity
-            android:name=".VideoActivity"
+            android:name=".presentation.VideoActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".FullScreenImageActivity"
-            android:exported="false"
-            android:screenOrientation="landscape" />
-        <activity
-            android:name=".CarModelActivity"
+            android:name=".presentation.FullScreenImageActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA6bU5Kfdw3pT_zzwjxiyUfm3OI5Tijg08" />
+        <activity
+            android:name=".presentation.CarModelActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
 
         <activity
-            android:name=".LocationActivity"
+            android:name=".presentation.SatisServisActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".PriceListActivity"
+            android:name=".presentation.PriceListActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".GalleryActivity"
+            android:name=".presentation.GalleryActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".HardwareAndTechnicalPageActivity"
+            android:name=".presentation.HardwareAndTechnicalPageActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".CarPageActivity"
+            android:name=".presentation.CarPageActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>
