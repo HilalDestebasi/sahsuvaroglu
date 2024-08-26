@@ -5,11 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
-        android:name=".SahsuvarogluApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -29,17 +26,14 @@
             android:name=".presentation.FullScreenImageActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
+
         <activity
             android:name=".presentation.CarModelActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA6bU5Kfdw3pT_zzwjxiyUfm3OI5Tijg08" />
-
         <activity
-            android:name=".presentation.LocationActivity"
+            android:name=".presentation.SatisServisActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
