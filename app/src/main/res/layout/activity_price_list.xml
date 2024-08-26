@@ -98,6 +98,19 @@
         android:src="@drawable/sahsuvaroglu_grup_logo"/>
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Tavsiye edilen kampanyalı anahtar teslim fiyatlarına ÖTV, KDV dahil olup, MTV, Trafik Sigortası ve Trafik Tescil Masrafları hariçtir. "
+        android:textColor="@color/main_page_car_name_color"
+        android:textSize="@dimen/_5ssp"
+        app:layout_constraintBottom_toBottomOf="@id/price_list_sg_logo"
+        app:layout_constraintEnd_toEndOf="@id/price_list_back_icon"
+        app:layout_constraintStart_toStartOf="@id/price_list_car_name"/>
+
+
+    <TextView
         android:id="@+id/kampanya_button"
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_20sdp"
@@ -106,6 +119,8 @@
         android:background="@drawable/hard_n_tech_background"
    app:layout_constraintEnd_toEndOf="@id/price_list_back_icon"
         android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/league_spartan_regular"
         android:textColor="@color/white"
         android:text="Kampanya"/>
 

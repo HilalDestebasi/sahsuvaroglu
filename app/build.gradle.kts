@@ -67,4 +67,6 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("androidx.room:room-runtime:2.5.0")
     kapt("androidx.room:room-compiler:2.5.0")
+    implementation("com.google.code.gson:gson:2.8.9")
+
 }
