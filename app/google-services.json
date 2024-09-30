@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1022526767930",
+    "firebase_url": "https://sahsuvaroglu-fafe1-default-rtdb.firebaseio.com",
+    "project_id": "sahsuvaroglu-fafe1",
+    "storage_bucket": "sahsuvaroglu-fafe1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022526767930:android:71a21c2378ecf029a54603",
+        "android_client_info": {
+          "package_name": "com.sahsuvaroglu.kgm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACKbBz0gBqM1tYYfxWcLlx9gmyUoWJGxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

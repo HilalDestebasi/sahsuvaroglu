@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_3sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@drawable/review"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="İsim"
+        android:textColor="@color/main_color"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:id="@+id/ss_title"
+        android:textSize="@dimen/_12sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/ss_title"
+        app:layout_constraintBottom_toBottomOf="@id/ss_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:textColor="@color/main_color"
+        android:id="@+id/ss_satSer"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/league_spartan_regular"
+        android:text="Satış - Servis"/>
+    <View
+        android:id="@+id/ss_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginHorizontal="@dimen/_3sdp"
+        android:background="@color/main_color"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintTop_toBottomOf="@id/ss_title"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/main_color"
+        app:layout_constraintEnd_toEndOf="@id/ss_telephone_title"
+        android:text="Adres: "
+        app:layout_constraintTop_toBottomOf="@id/ss_separator"
+        app:layout_constraintStart_toStartOf="@id/ss_title"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/ss_address_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/main_color"
+        app:layout_constraintTop_toTopOf="@id/ss_address_title"
+        app:layout_constraintBottom_toBottomOf="@id/ss_address_title"
+        app:layout_constraintStart_toEndOf="@id/ss_address_title"
+        android:text="adress..."
+        android:id="@+id/ss_address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textColor="@color/main_color"
+        android:text="Telefon: "
+        app:layout_constraintTop_toBottomOf="@id/ss_address_title"
+        app:layout_constraintStart_toStartOf="@id/ss_title"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/ss_telephone_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/main_color"
+        app:layout_constraintTop_toTopOf="@id/ss_telephone_title"
+        app:layout_constraintBottom_toBottomOf="@id/ss_telephone_title"
+        app:layout_constraintStart_toEndOf="@id/ss_telephone_title"
+        android:text="telefon..."
+        android:id="@+id/ss_telephone"/>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
