@@ -1,6 +1,9 @@
 package com.sahsuvaroglu.kgm.presentation
 
 import android.content.Intent
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,7 +12,6 @@ import android.view.WindowManager
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.FirebaseApp
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -31,25 +33,6 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-
-        /*
-     val database = FirebaseDatabase.getInstance()
-
-
-     val carsRef = database.getReference("cars")
-
-   carsRef.addValueEventListener(object : ValueEventListener {
-         override fun onDataChange(dataSnapshot: DataSnapshot) {
-             for (carSnapshot in dataSnapshot.children) {
-                 val carName = carSnapshot.key
-                 val carDetails = carSnapshot.value
-                 Log.d("FirebaseCar", "Car: $carName, Details: $carDetails")
-             }
-         }
-         override fun onCancelled(databaseError: DatabaseError) {
-             Log.w("FirebaseCar", "loadPost:onCancelled", databaseError.toException())
-         }
-     })*/
 
         setContentView(R.layout.activity_main)
         val torresEvxImageView: ImageView = findViewById(R.id.torres_evx_main_page_img)
@@ -74,6 +57,5 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("CAR_NAME", carName)
         startActivity(intent)
     }
-
 
 }
